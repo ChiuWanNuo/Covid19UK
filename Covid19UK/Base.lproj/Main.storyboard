@@ -289,6 +289,14 @@
                                         <constraint firstItem="Y1y-RP-gSw" firstAttribute="top" secondItem="ddZ-wd-anw" secondAttribute="topMargin" constant="20" id="p5N-sK-Ue3"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="confirmedLabel" destination="wYQ-x9-rDh" id="gRA-Ut-af6"/>
+                                    <outlet property="curedLabel" destination="Mhu-om-NQR" id="hus-IN-KOK"/>
+                                    <outlet property="dateLabel" destination="gUT-P3-3fZ" id="TzG-WB-snA"/>
+                                    <outlet property="deathLabel" destination="u7o-oB-c5a" id="l31-GB-3p0"/>
+                                    <outlet property="negativeLabel" destination="0TD-rF-PNc" id="CLW-7u-16j"/>
+                                    <outlet property="seriousLabel" destination="5Ol-uk-sqn" id="fdg-Vj-C3c"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

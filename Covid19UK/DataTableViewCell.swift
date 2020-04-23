@@ -10,6 +10,13 @@ import UIKit
 
 class DataTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var confirmedLabel: UILabel!
+    @IBOutlet weak var deathLabel: UILabel!
+    @IBOutlet weak var curedLabel: UILabel!
+    @IBOutlet weak var seriousLabel: UILabel!
+    @IBOutlet weak var negativeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
