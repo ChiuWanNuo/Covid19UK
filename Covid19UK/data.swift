@@ -26,3 +26,4 @@ struct VriusInfo: Codable {
     let test_done:Int?
     
 }
+
