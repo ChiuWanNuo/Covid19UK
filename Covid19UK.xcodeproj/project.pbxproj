@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		573A68E424521D48004A8FAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573A68E224521D48004A8FAC /* Main.storyboard */; };
 		573A68E624521D4A004A8FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 573A68E524521D4A004A8FAC /* Assets.xcassets */; };
 		573A68E924521D4A004A8FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573A68E724521D4A004A8FAC /* LaunchScreen.storyboard */; };
+		573A68F124521FF8004A8FAC /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 573A68F024521FF8004A8FAC /* Charts.framework */; };
 		70500362E0D37A6B2071DBBD /* Pods_Covid19UK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC4FE0F4E1D93B2037C8A25 /* Pods_Covid19UK.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		573A68E524521D4A004A8FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		573A68E824521D4A004A8FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		573A68EA24521D4A004A8FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		573A68F024521FF8004A8FAC /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC4FE0F4E1D93B2037C8A25 /* Pods_Covid19UK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19UK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		943C4E50184D1BE55CC4F00A /* Pods-Covid19UK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19UK.release.xcconfig"; path = "Target Support Files/Pods-Covid19UK/Pods-Covid19UK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				573A68F124521FF8004A8FAC /* Charts.framework in Frameworks */,
 				70500362E0D37A6B2071DBBD /* Pods_Covid19UK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +80,7 @@
 		6A0E5B266080966D7C2F2727 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				573A68F024521FF8004A8FAC /* Charts.framework */,
 				8FC4FE0F4E1D93B2037C8A25 /* Pods_Covid19UK.framework */,
 			);
 			name = Frameworks;
@@ -88,7 +92,6 @@
 				556930E635A2CC2D0FC6862E /* Pods-Covid19UK.debug.xcconfig */,
 				943C4E50184D1BE55CC4F00A /* Pods-Covid19UK.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
