@@ -15,6 +15,7 @@
 		573A68E924521D4A004A8FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573A68E724521D4A004A8FAC /* LaunchScreen.storyboard */; };
 		573A68F124521FF8004A8FAC /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 573A68F024521FF8004A8FAC /* Charts.framework */; };
 		573A68F32452203C004A8FAC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573A68F22452203C004A8FAC /* MainViewController.swift */; };
+		573A68F5245234EF004A8FAC /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573A68F4245234EF004A8FAC /* data.swift */; };
 		70500362E0D37A6B2071DBBD /* Pods_Covid19UK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC4FE0F4E1D93B2037C8A25 /* Pods_Covid19UK.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		573A68EA24521D4A004A8FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		573A68F024521FF8004A8FAC /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		573A68F22452203C004A8FAC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		573A68F4245234EF004A8FAC /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
 		8FC4FE0F4E1D93B2037C8A25 /* Pods_Covid19UK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19UK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		943C4E50184D1BE55CC4F00A /* Pods-Covid19UK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19UK.release.xcconfig"; path = "Target Support Files/Pods-Covid19UK/Pods-Covid19UK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 				573A68DE24521D48004A8FAC /* SceneDelegate.swift */,
 				573A68E024521D48004A8FAC /* ViewController.swift */,
 				573A68E224521D48004A8FAC /* Main.storyboard */,
+				573A68F4245234EF004A8FAC /* data.swift */,
 				573A68F22452203C004A8FAC /* MainViewController.swift */,
 				573A68E524521D4A004A8FAC /* Assets.xcassets */,
 				573A68E724521D4A004A8FAC /* LaunchScreen.storyboard */,
@@ -216,6 +219,7 @@
 				573A68E124521D48004A8FAC /* ViewController.swift in Sources */,
 				573A68DD24521D47004A8FAC /* AppDelegate.swift in Sources */,
 				573A68DF24521D48004A8FAC /* SceneDelegate.swift in Sources */,
+				573A68F5245234EF004A8FAC /* data.swift in Sources */,
 				573A68F32452203C004A8FAC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,12 +10,25 @@ import UIKit
 import Charts
 
 class MainViewController: UIViewController {
+    
+    @IBOutlet weak var confirmednumberLabel: UILabel!
+    @IBOutlet weak var deathnumberLabel: UILabel!
+    @IBOutlet weak var testednumberLabel: UILabel!
+    @IBOutlet weak var postrateLabel: UILabel!
+    @IBOutlet weak var mortalityLabel: UILabel!
+    @IBOutlet weak var negativenumberLabel: UILabel!
+    @IBOutlet weak var dailydataButton: UIButton!
+    @IBOutlet weak var govukButton: UIButton!
+    @IBOutlet weak var barchartView: BarChartView!
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
     
 
     /*
