@@ -131,6 +131,9 @@
                                         <state key="normal" title="DailyData">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="fBd-YX-AYa" kind="show" destinationCreationSelector="dailyData:" id="bk1-X1-4eJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAe-o1-IIy">
                                         <rect key="frame" x="187" y="0.0" width="187" height="126"/>
@@ -186,7 +189,7 @@
             <objects>
                 <tableViewController id="fBd-YX-AYa" customClass="DataTableViewController" customModule="Covid19UK" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="X94-Q5-BFq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -304,6 +307,7 @@
                             <outlet property="delegate" destination="fBd-YX-AYa" id="cx1-rO-tpS"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="u2w-5h-Xs6"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yot-oY-jaR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -331,6 +335,9 @@
                         <viewLayoutGuide key="safeArea" id="SxZ-e7-xUC"/>
                     </view>
                     <navigationItem key="navigationItem" id="hRU-w6-5Af"/>
+                    <connections>
+                        <outlet property="govukWebView" destination="gBB-cl-dtF" id="61k-yX-MEj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3th-sY-M7o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

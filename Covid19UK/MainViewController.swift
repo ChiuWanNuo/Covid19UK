@@ -34,6 +34,10 @@ class MainViewController: UIViewController {
         getData()
         setChart()
     }
+    @IBSegueAction func dailyData(_ coder: NSCoder) -> DataTableViewController? {
+        let controller = DataTableViewController(coder: coder)
+        return controller
+    }
     
     
     @IBSegueAction func govukWeb(_ coder: NSCoder) -> GovukWebViewController? {

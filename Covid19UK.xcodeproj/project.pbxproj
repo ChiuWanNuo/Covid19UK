@@ -19,6 +19,7 @@
 		573A68FB245237FE004A8FAC /* GovukWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573A68FA245237FE004A8FAC /* GovukWebViewController.swift */; };
 		573A68FD24523C2D004A8FAC /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573A68FC24523C2D004A8FAC /* DataTableViewController.swift */; };
 		573A68FF24523CD2004A8FAC /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573A68FE24523CD2004A8FAC /* DataTableViewCell.swift */; };
+		5761CBB62453049D000E7591 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5761CBB52453049D000E7591 /* WebKit.framework */; };
 		70500362E0D37A6B2071DBBD /* Pods_Covid19UK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC4FE0F4E1D93B2037C8A25 /* Pods_Covid19UK.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		573A68FA245237FE004A8FAC /* GovukWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovukWebViewController.swift; sourceTree = "<group>"; };
 		573A68FC24523C2D004A8FAC /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
 		573A68FE24523CD2004A8FAC /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		5761CBB52453049D000E7591 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		8FC4FE0F4E1D93B2037C8A25 /* Pods_Covid19UK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19UK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		943C4E50184D1BE55CC4F00A /* Pods-Covid19UK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19UK.release.xcconfig"; path = "Target Support Files/Pods-Covid19UK/Pods-Covid19UK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5761CBB62453049D000E7591 /* WebKit.framework in Frameworks */,
 				573A68F124521FF8004A8FAC /* Charts.framework in Frameworks */,
 				70500362E0D37A6B2071DBBD /* Pods_Covid19UK.framework in Frameworks */,
 			);
@@ -95,6 +98,7 @@
 		6A0E5B266080966D7C2F2727 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5761CBB52453049D000E7591 /* WebKit.framework */,
 				573A68F024521FF8004A8FAC /* Charts.framework */,
 				8FC4FE0F4E1D93B2037C8A25 /* Pods_Covid19UK.framework */,
 			);

@@ -11,9 +11,10 @@ import WebKit
 
 class GovukWebViewController: UIViewController {
 
+
     @IBOutlet weak var govukWebView: WKWebView!
     
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
         
         if let url = URL(string: "https://www.gov.uk/guidance/coronavirus-covid-19-information-for-the-public"){
