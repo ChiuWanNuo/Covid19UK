@@ -1,22 +1,21 @@
 //
-//  DataTableViewController.swift
+//  AreaTableViewController.swift
 //  Covid19UK
 //
-//  Created by ChiuWanNuo on 23/04/2020.
+//  Created by ChiuWanNuo on 26/04/2020.
 //  Copyright © 2020 ChiuWanNuo. All rights reserved.
 //
 
 import UIKit
-import Foundation
 
-class DataTableViewController: UITableViewController {
+class AreaTableViewController: UITableViewController {
     
-    var vriusData = [VriusInfo]()
+    var vriusArea = [AreaData.Area]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getdailyData()
+        getArea()
     }
     
     // MARK: - Table view data source
@@ -28,57 +27,41 @@ class DataTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return vriusData.count
+        return vriusArea.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "dailydataCell", for: indexPath) as! DataTableViewCell
-        let dailylist = vriusData[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "areaCell", for: indexPath) as! AreaTableViewCell
+        let areadata = vriusArea[indexPath.row]
         
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy/MM/dd"
-        let dateString = dailylist.date
-        let dailydateString = dateFormatter.string(from: dateString!)
+        let locationname = areadata.location
+        let locationnumber = areadata.number
         
-        cell.dateLabel.text = "\(dailydateString)"
-        cell.confirmedLabel.text = "\(dailylist.confirmed)"
-        cell.deathLabel.text = "\(dailylist.death)"
-        cell.curedLabel.text = "\(dailylist.cured)"
-        cell.negativeLabel.text = "\(dailylist.negative)"
-        cell.seriousLabel.text = "\(dailylist.serious)"
-        
-        
+        cell.areanameLabel.text = "\(locationname)" + ":"
+        cell.areanumberLabel.text = "\(locationnumber)"
+
         return cell
     }
     
-    func getdailyData(){
-        let urlStr = "https://api.covid19uk.live/historyfigures"
+    func getArea() {
+        let urlStr = "https://api.covid19uk.live"
         if let url = URL(string: urlStr) {
             let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .millisecondsSince1970
-                if let data = data, let dailyData = try? decoder.decode(Vrius.self, from: data) {
-                    self.vriusData = dailyData.data
+                if let data = data, let areadata = try?decoder.decode(AreaData.self, from: data) {
+                    self.vriusArea = areadata.data[0].area
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                     }
                     
                 }
-                
             }
             task.resume()
         }
         
-        
-        
-        
-        
     }
-    
-    
-    
-    
     
     /*
      // Override to support conditional editing of the table view.

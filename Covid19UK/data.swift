@@ -11,19 +11,20 @@ import Foundation
 struct Vrius: Codable {
     let status: Bool
     let data:[VriusInfo]
+    
+    struct VriusInfo: Codable {
+        let confirmed: Int
+        let date: Date?
+        let death: Int
+        let cured: Int
+        let serious: Int
+        let negative: Int
+        let tested: Int?
+    }
+
+
 }
 
-struct VriusInfo: Codable {
-    let id: Int
-    let confirmed: Int
-    let date: Date?
-    let death: Int
-    let cured: Int
-    let serious: Int
-    let negative: Int
-    let suspected: Int
-    let tested: Int?
-    let test_done:Int?
-    
-}
+
+
 

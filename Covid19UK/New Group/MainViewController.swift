@@ -17,12 +17,11 @@ class MainViewController: UIViewController {
     @IBOutlet weak var postrateLabel: UILabel!
     @IBOutlet weak var mortalityLabel: UILabel!
     @IBOutlet weak var negativenumberLabel: UILabel!
-    @IBOutlet weak var dailydataButton: UIButton!
-    @IBOutlet weak var govukButton: UIButton!
+    @IBOutlet weak var areaButton: UIButton!
     @IBOutlet weak var barchartView: BarChartView!
     
     var vriusInfo : Vrius?
-    var dailydate : [VriusInfo] = []
+    var dailydate : [Vrius.VriusInfo] = []
     var dateArray = [String]()
     
     var axisFormatDelgate: IAxisValueFormatter?
@@ -34,16 +33,7 @@ class MainViewController: UIViewController {
         getData()
         setChart()
     }
-    @IBSegueAction func dailyData(_ coder: NSCoder) -> DataTableViewController? {
-        let controller = DataTableViewController(coder: coder)
-        return controller
-    }
     
-    
-    @IBSegueAction func govukWeb(_ coder: NSCoder) -> GovukWebViewController? {
-        let controller = GovukWebViewController(coder: coder)
-        return controller
-    }
     
     func getData(){
         let urlStr = "https://api.covid19uk.live"
@@ -99,9 +89,6 @@ class MainViewController: UIViewController {
                         let dailydates = try decoder.decode(Vrius.self, from: data)
                         self.vriusInfo = dailydates
                         //print("did get")
-                        
-                        
-                        
                         DispatchQueue.main.async {
                             
                             self.view.reloadInputViews()
@@ -134,17 +121,12 @@ class MainViewController: UIViewController {
                             //change xAxis color
                             let xAxis = self.barchartView.xAxis
                             xAxis.labelTextColor = UIColor.white
-                            
-                            
                             //print("get chart")
                         }
                     } catch {
                         print (error)
                     }
                 }
-                
-                
-                
             }
             task.resume()
             //print("take resume")
@@ -153,6 +135,10 @@ class MainViewController: UIViewController {
         
     }
     
+    @IBSegueAction func areaPage(_ coder: NSCoder) -> AreaTableViewController? {
+        let controller = AreaTableViewController (coder: coder)
+        return controller
+    }
     
     
     
