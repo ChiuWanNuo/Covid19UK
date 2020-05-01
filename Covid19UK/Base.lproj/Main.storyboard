@@ -119,12 +119,11 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYs-qX-0Lq" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="20" y="418" width="374" height="248"/>
+                                <rect key="frame" x="20" y="501" width="374" height="227"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPY-nC-5fv">
-                                <rect key="frame" x="48" y="724" width="319" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPY-nC-5fv">
+                                <rect key="frame" x="40" y="757" width="334" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <state key="normal" title="📍UK Location cases">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -133,24 +132,37 @@
                                     <segue destination="bJS-l7-Tz2" kind="show" destinationCreationSelector="areaPage:" id="qdr-06-crl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQM-A9-wM2">
+                                <rect key="frame" x="40" y="418" width="334" height="53"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="nzo-HM-F7h" firstAttribute="bottom" secondItem="dYs-qX-0Lq" secondAttribute="bottom" constant="147" id="1Wb-8o-P2j"/>
+                            <constraint firstItem="dYs-qX-0Lq" firstAttribute="top" secondItem="YQM-A9-wM2" secondAttribute="bottom" constant="30" id="0C3-Sc-aIT"/>
+                            <constraint firstItem="nzo-HM-F7h" firstAttribute="bottom" secondItem="bPY-nC-5fv" secondAttribute="bottom" constant="20" id="1MO-DG-43f"/>
                             <constraint firstItem="LOY-lI-j68" firstAttribute="top" secondItem="nzo-HM-F7h" secondAttribute="top" constant="20" id="4uf-jb-I79"/>
                             <constraint firstItem="dYs-qX-0Lq" firstAttribute="centerX" secondItem="ERo-sl-o0r" secondAttribute="centerX" id="95r-Fl-Ul2"/>
                             <constraint firstItem="CY3-4D-Lod" firstAttribute="top" secondItem="vpK-yQ-4NX" secondAttribute="top" constant="211" id="9QT-jI-4cI"/>
                             <constraint firstItem="nzo-HM-F7h" firstAttribute="trailing" secondItem="dYs-qX-0Lq" secondAttribute="trailing" constant="20" id="F2m-ra-K7f"/>
                             <constraint firstItem="CY3-4D-Lod" firstAttribute="leading" secondItem="nzo-HM-F7h" secondAttribute="leading" constant="20" id="Ks4-3W-eXZ"/>
                             <constraint firstItem="CY3-4D-Lod" firstAttribute="top" secondItem="LOY-lI-j68" secondAttribute="bottom" constant="32" id="YjY-Zc-HoT"/>
+                            <constraint firstItem="nzo-HM-F7h" firstAttribute="trailing" secondItem="YQM-A9-wM2" secondAttribute="trailing" constant="40" id="ZCF-X7-bTr"/>
                             <constraint firstItem="ERo-sl-o0r" firstAttribute="bottom" secondItem="nzo-HM-F7h" secondAttribute="bottom" id="bDf-hZ-BzR"/>
                             <constraint firstItem="LOY-lI-j68" firstAttribute="leading" secondItem="nzo-HM-F7h" secondAttribute="leading" constant="85" id="cAg-Q7-Gsh"/>
                             <constraint firstItem="nzo-HM-F7h" firstAttribute="trailing" secondItem="CY3-4D-Lod" secondAttribute="trailing" constant="20" id="eAe-MI-dN6"/>
-                            <constraint firstItem="dYs-qX-0Lq" firstAttribute="top" secondItem="CY3-4D-Lod" secondAttribute="bottom" constant="20" id="gPU-SJ-e4O"/>
+                            <constraint firstItem="YQM-A9-wM2" firstAttribute="leading" secondItem="nzo-HM-F7h" secondAttribute="leading" constant="40" id="eZo-pR-AIZ"/>
                             <constraint firstItem="ERo-sl-o0r" firstAttribute="top" secondItem="nzo-HM-F7h" secondAttribute="top" id="gee-Ab-dMf"/>
                             <constraint firstItem="ERo-sl-o0r" firstAttribute="leading" secondItem="nzo-HM-F7h" secondAttribute="leading" id="kpk-Qs-aA7"/>
+                            <constraint firstItem="nzo-HM-F7h" firstAttribute="trailing" secondItem="bPY-nC-5fv" secondAttribute="trailing" constant="40" id="lL4-zf-gq7"/>
+                            <constraint firstItem="bPY-nC-5fv" firstAttribute="leading" secondItem="nzo-HM-F7h" secondAttribute="leading" constant="40" id="lpf-EY-Jqg"/>
+                            <constraint firstItem="dYs-qX-0Lq" firstAttribute="top" secondItem="vpK-yQ-4NX" secondAttribute="top" constant="501" id="mdD-Nz-6Qg"/>
                             <constraint firstItem="dYs-qX-0Lq" firstAttribute="leading" secondItem="nzo-HM-F7h" secondAttribute="leading" constant="20" id="pZx-JE-Igd"/>
                             <constraint firstItem="nzo-HM-F7h" firstAttribute="trailing" secondItem="LOY-lI-j68" secondAttribute="trailing" constant="85" id="pwC-U4-iHs"/>
+                            <constraint firstItem="YQM-A9-wM2" firstAttribute="top" secondItem="CY3-4D-Lod" secondAttribute="bottom" constant="20" id="sFr-Us-kaa"/>
+                            <constraint firstItem="bPY-nC-5fv" firstAttribute="top" secondItem="dYs-qX-0Lq" secondAttribute="bottom" constant="29" id="zKf-nc-jS2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nzo-HM-F7h"/>
                     </view>
@@ -166,13 +178,14 @@
                         <outlet property="negativenumberLabel" destination="8P6-WR-fJi" id="Xal-IY-i1d"/>
                         <outlet property="postrateLabel" destination="7hK-E2-iwY" id="98C-aA-LWi"/>
                         <outlet property="testednumberLabel" destination="wQS-br-2Jh" id="lQm-hk-PrI"/>
+                        <outlet property="updatetimeLabel" destination="YQM-A9-wM2" id="Qcj-O7-IoX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cK7-XM-AKb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4982.608695652174" y="-66.294642857142861"/>
+            <point key="canvasLocation" x="5101" y="-70"/>
         </scene>
-        <!--Area Table View Controller-->
+        <!--UK Locations 🇬🇧-->
         <scene sceneID="PDf-PG-2F4">
             <objects>
                 <tableViewController id="bJS-l7-Tz2" customClass="AreaTableViewController" customModule="Covid19UK" customModuleProvider="target" sceneMemberID="viewController">
@@ -224,7 +237,7 @@
                             <outlet property="delegate" destination="bJS-l7-Tz2" id="LAK-cG-pM0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="MJJ-J4-9Pn"/>
+                    <navigationItem key="navigationItem" title="UK Locations 🇬🇧" id="MJJ-J4-9Pn"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygm-6t-JbE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

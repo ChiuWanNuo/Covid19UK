@@ -20,6 +20,7 @@ struct Vrius: Codable {
         let serious: Int
         let negative: Int
         let tested: Int?
+        let ts: Date?
     }
 
 

@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var mortalityLabel: UILabel!
     @IBOutlet weak var negativenumberLabel: UILabel!
     @IBOutlet weak var areaButton: UIButton!
+    @IBOutlet weak var updatetimeLabel: UILabel!
     @IBOutlet weak var barchartView: BarChartView!
     
     var vriusInfo : Vrius?
@@ -41,12 +42,18 @@ class MainViewController: UIViewController {
             //print("Enter URL")
             let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
                 let decoder = JSONDecoder()
-                decoder.dateDecodingStrategy = .iso8601
+                decoder.dateDecodingStrategy = .millisecondsSince1970
                 if let data = data {
                     do {
-                        let vrius = try JSONDecoder().decode(Vrius.self, from: data)
+                        
+                        let vrius = try decoder.decode(Vrius.self, from: data)
                         self.vriusInfo = vrius
                         //print("did get")
+                        let dateFormatter = DateFormatter()
+                        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+                        let updateString = self.vriusInfo?.data.first?.ts
+                        let updatetimeString = dateFormatter.string(from: updateString!)
+                        self.dateArray.append(updatetimeString)
                         
                         DispatchQueue.main.async {
                             if let confirmednumber = self.vriusInfo?.data[0].confirmed,
@@ -59,6 +66,7 @@ class MainViewController: UIViewController {
                                 self.negativenumberLabel.text = "\(negativenumber)"
                                 self.postrateLabel.text = String(format: "%.2f", Double(Double(confirmednumber) / Double(testednumber) * 100)) + "%"
                                 self.mortalityLabel.text = String(format: "%.2f", Double(Double(deathnumber) / Double(confirmednumber) * 100)) + "%"
+                                self.updatetimeLabel.text = "Update: " + "\(updatetimeString)"
                             }
                         }
                         
