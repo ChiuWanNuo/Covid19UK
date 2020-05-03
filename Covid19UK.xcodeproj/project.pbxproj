@@ -21,6 +21,7 @@
 		573A68FF24523CD2004A8FAC /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573A68FE24523CD2004A8FAC /* DataTableViewCell.swift */; };
 		5761CBB62453049D000E7591 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5761CBB52453049D000E7591 /* WebKit.framework */; };
 		57795F7724583FF4007B4B51 /* AreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57795F7624583FF4007B4B51 /* AreaTableViewCell.swift */; };
+		5793CB72245EF0010062C000 /* daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5793CB71245EF0010062C000 /* daily.swift */; };
 		57A46DA32455B18800358555 /* AreaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A46DA22455B18800358555 /* AreaTableViewController.swift */; };
 		57A63AD2245B25F500065E1F /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A63AD1245B25F500065E1F /* Area.swift */; };
 		70500362E0D37A6B2071DBBD /* Pods_Covid19UK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC4FE0F4E1D93B2037C8A25 /* Pods_Covid19UK.framework */; };
@@ -44,6 +45,7 @@
 		573A68FE24523CD2004A8FAC /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		5761CBB52453049D000E7591 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		57795F7624583FF4007B4B51 /* AreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaTableViewCell.swift; sourceTree = "<group>"; };
+		5793CB71245EF0010062C000 /* daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daily.swift; sourceTree = "<group>"; };
 		57A46DA22455B18800358555 /* AreaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaTableViewController.swift; sourceTree = "<group>"; };
 		57A63AD1245B25F500065E1F /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		8FC4FE0F4E1D93B2037C8A25 /* Pods_Covid19UK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19UK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 				57A46DA12455A1F000358555 /* New Group */,
 				573A68DC24521D47004A8FAC /* AppDelegate.swift */,
 				57A63AD1245B25F500065E1F /* Area.swift */,
+				5793CB71245EF0010062C000 /* daily.swift */,
 				573A68DE24521D48004A8FAC /* SceneDelegate.swift */,
 				573A68E024521D48004A8FAC /* ViewController.swift */,
 				573A68E224521D48004A8FAC /* Main.storyboard */,
@@ -255,6 +258,7 @@
 				57795F7724583FF4007B4B51 /* AreaTableViewCell.swift in Sources */,
 				573A68F32452203C004A8FAC /* MainViewController.swift in Sources */,
 				573A68FF24523CD2004A8FAC /* DataTableViewCell.swift in Sources */,
+				5793CB72245EF0010062C000 /* daily.swift in Sources */,
 				57A63AD2245B25F500065E1F /* Area.swift in Sources */,
 				57A46DA32455B18800358555 /* AreaTableViewController.swift in Sources */,
 			);

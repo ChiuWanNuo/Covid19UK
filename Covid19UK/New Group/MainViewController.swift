@@ -22,7 +22,8 @@ class MainViewController: UIViewController {
     @IBOutlet weak var barchartView: BarChartView!
     
     var vriusInfo : Vrius?
-    var dailydate : [Vrius.VriusInfo] = []
+    var covidInfo : Covid?
+    var dailydate : [Covid.DailyCovid] = []
     var dateArray = [String]()
     
     var axisFormatDelgate: IAxisValueFormatter?
@@ -53,7 +54,7 @@ class MainViewController: UIViewController {
                         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
                         let updateString = self.vriusInfo?.data.first?.ts
                         let updatetimeString = dateFormatter.string(from: updateString!)
-                        self.dateArray.append(updatetimeString)
+                        
                         
                         DispatchQueue.main.async {
                             if let confirmednumber = self.vriusInfo?.data[0].confirmed,
@@ -94,8 +95,8 @@ class MainViewController: UIViewController {
                 
                 if let data = data {
                     do {
-                        let dailydates = try decoder.decode(Vrius.self, from: data)
-                        self.vriusInfo = dailydates
+                        let dailydates = try decoder.decode(Covid.self, from: data)
+                        self.covidInfo = dailydates
                         //print("did get")
                         DispatchQueue.main.async {
                             
@@ -110,7 +111,7 @@ class MainViewController: UIViewController {
                                 
                                 let dateFormatter = DateFormatter()
                                 dateFormatter.dateFormat = "MM/dd"
-                                let dateString = self.vriusInfo?.data[i].date
+                                let dateString = self.covidInfo?.data[i].date
                                 let dailydateString = dateFormatter.string(from: dateString!)
                                 self.dateArray.append(dailydateString)
                             }

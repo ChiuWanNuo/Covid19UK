@@ -11,7 +11,7 @@ import Foundation
 
 class DataTableViewController: UITableViewController {
     
-    var vriusData = [Vrius.VriusInfo]()
+    var vriusData = [Covid.DailyCovid]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +58,7 @@ class DataTableViewController: UITableViewController {
             let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .millisecondsSince1970
-                if let data = data, let dailyData = try? decoder.decode(Vrius.self, from: data) {
+                if let data = data, let dailyData = try? decoder.decode(Covid.self, from: data) {
                     self.vriusData = dailyData.data
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
