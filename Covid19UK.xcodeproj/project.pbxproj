@@ -87,14 +87,12 @@
 		573A68DB24521D47004A8FAC /* Covid19UK */ = {
 			isa = PBXGroup;
 			children = (
-				57A46DA12455A1F000358555 /* New Group */,
+				57A46DA12455A1F000358555 /* View Controllers */,
+				57745085246038B5004C1419 /* Model */,
 				573A68DC24521D47004A8FAC /* AppDelegate.swift */,
-				57A63AD1245B25F500065E1F /* Area.swift */,
-				5793CB71245EF0010062C000 /* daily.swift */,
 				573A68DE24521D48004A8FAC /* SceneDelegate.swift */,
 				573A68E024521D48004A8FAC /* ViewController.swift */,
 				573A68E224521D48004A8FAC /* Main.storyboard */,
-				573A68F824523652004A8FAC /* data.swift */,
 				573A68E524521D4A004A8FAC /* Assets.xcassets */,
 				573A68E724521D4A004A8FAC /* LaunchScreen.storyboard */,
 				573A68EA24521D4A004A8FAC /* Info.plist */,
@@ -102,17 +100,35 @@
 			path = Covid19UK;
 			sourceTree = "<group>";
 		};
-		57A46DA12455A1F000358555 /* New Group */ = {
+		57745085246038B5004C1419 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57A63AD1245B25F500065E1F /* Area.swift */,
+				5793CB71245EF0010062C000 /* daily.swift */,
+				573A68F824523652004A8FAC /* data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57745086246039E1004C1419 /* Veiws */ = {
+			isa = PBXGroup;
+			children = (
+				573A68FE24523CD2004A8FAC /* DataTableViewCell.swift */,
+				57795F7624583FF4007B4B51 /* AreaTableViewCell.swift */,
+			);
+			path = Veiws;
+			sourceTree = "<group>";
+		};
+		57A46DA12455A1F000358555 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				573A68F22452203C004A8FAC /* MainViewController.swift */,
 				573A68FC24523C2D004A8FAC /* DataTableViewController.swift */,
 				573A68FA245237FE004A8FAC /* GovukWebViewController.swift */,
-				573A68FE24523CD2004A8FAC /* DataTableViewCell.swift */,
 				57A46DA22455B18800358555 /* AreaTableViewController.swift */,
-				57795F7624583FF4007B4B51 /* AreaTableViewCell.swift */,
+				57745086246039E1004C1419 /* Veiws */,
 			);
-			path = "New Group";
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		6A0E5B266080966D7C2F2727 /* Frameworks */ = {
